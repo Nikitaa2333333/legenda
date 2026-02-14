@@ -42,11 +42,11 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            <button className="group px-8 py-4 bg-legend-dark text-white rounded-full text-lg font-medium transition-all hover:bg-legend-accent hover:scale-105 shadow-xl shadow-legend-dark/20 flex items-center justify-center gap-3 w-full sm:w-auto">
+            <button className="group px-6 py-3 sm:px-8 sm:py-4 bg-legend-dark text-white rounded-full text-base sm:text-lg font-medium transition-all hover:bg-legend-accent hover:scale-105 shadow-xl shadow-legend-dark/20 flex items-center justify-center gap-3 w-full sm:w-auto">
               Получить консультацию
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="px-8 py-4 bg-white border border-legend-dark/20 text-legend-dark rounded-full text-lg font-medium transition-all hover:bg-[#f7f5f2] hover:border-legend-dark hover:scale-105 shadow-sm w-full sm:w-auto">
+            <button className="px-6 py-3 sm:px-8 sm:py-4 bg-white border border-legend-dark/20 text-legend-dark rounded-full text-base sm:text-lg font-medium transition-all hover:bg-[#f7f5f2] hover:border-legend-dark hover:scale-105 shadow-sm w-full sm:w-auto">
               Оценить мой объект
             </button>
           </motion.div>

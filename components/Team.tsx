@@ -11,7 +11,7 @@ const Team: React.FC = () => {
           <h2 className="font-serif text-5xl md:text-6xl text-legend-dark">Команда</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex snap-x snap-mandatory overflow-x-auto pb-4 gap-4 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 md:pb-0 scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0">
           {TEAM_MEMBERS.map((member, index) => (
             <motion.div
               key={member.id}
@@ -19,7 +19,7 @@ const Team: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group text-center"
+              className="group text-center snap-center shrink-0 w-[80vw] sm:w-[350px] md:w-auto"
             >
               <div className="relative overflow-hidden rounded-[2rem] aspect-[3/4] mb-6 border border-black/5 shadow-sm">
                 <img
